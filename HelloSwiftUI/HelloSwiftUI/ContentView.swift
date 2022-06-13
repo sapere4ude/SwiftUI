@@ -63,6 +63,41 @@ struct ContentView: View {
             Image(systemName: "speaker.3").font(.system(size: 40))
             Image(systemName: "speaker.3").imageScale(.large).font(.system(size: 40))
         }
+        
+        HStack(alignment: .center) {
+            Rectangle()
+                .fill(Color.green)
+                .frame(width: 150, height: 150)
+            Rectangle()
+                .fill(Color.yellow)
+                .frame(width: 150, height: 550)
+        }
+        
+        VStack {
+            Rectangle()
+                .fill(Color.green)
+                .frame(width: 150, height: 150)
+            Rectangle()
+                .fill(Color.yellow)
+                .frame(width: 150, height: 150)
+        }
+        
+        ZStack {
+            Rectangle()
+                .fill(Color.red)
+                .frame(width: 150, height: 150)
+                .offset(x:-40, y: -40)
+            Rectangle()
+                .fill(Color.blue)
+                .frame(width: 150, height: 150)
+                .offset(x:20, y: 20)
+            Rectangle()
+                .fill(Color.green)
+                .frame(width: 150, height: 150)
+                .offset(x:80, y: 80)
+        }
+        
+        
     }
 }
 

@@ -119,7 +119,7 @@ struct ContentView: View {
 //                    Color.clear
 //                    Text("Spacer").font(.title).background(Color.yellow)
 //                }.background(Color.blue)
-//        
+//
 //                VStack {
 //                    Text("제목").font(.largeTitle)
 //                    Text("부제목").font(.largeTitle).foregroundColor(.gray)
@@ -137,38 +137,49 @@ struct ContentView: View {
 //                .border(Color.blue, width: 2)
 //            }
         
-        VStack {
-            Text("도형 만들기").font(.largeTitle).fontWeight(.heavy)
-            
-            HStack {
-                Text("둥근 모양").font(.title)
-                Spacer()
-            }
-            ZStack {
-                Rectangle().frame(height:10)
-                HStack {
-                    Circle().fill(Color.yellow)
-                    Ellipse().fill(Color.yellow)
-                    Capsule().fill(Color.yellow)
-                    RoundedRectangle(cornerRadius: 30).fill(Color.green)
-                }
-            }
-            HStack {
-                Text("각진 모양").font(.title)
-                Spacer()
-            }
-            ZStack {
-                Rectangle().frame(height:10)
-                HStack {
-                    Color.red   // SwiftUI에선 컬러 그 자체도 하나의 뷰에 해당함
-                    Rectangle().fill(Color.blue)
-                    RoundedRectangle(cornerRadius: 0).fill(Color.green)
-                }
-            }
-        }
-        .padding()
+//        VStack {
+//            Text("도형 만들기").font(.largeTitle).fontWeight(.heavy)
+//
+//            HStack {
+//                Text("둥근 모양").font(.title)
+//                Spacer()
+//            }
+//            ZStack {
+//                Rectangle().frame(height:10)
+//                HStack {
+//                    Circle().fill(Color.yellow)
+//                    Ellipse().fill(Color.yellow)
+//                    Capsule().fill(Color.yellow)
+//                    RoundedRectangle(cornerRadius: 30).fill(Color.green)
+//                }
+//            }
+//            HStack {
+//                Text("각진 모양").font(.title)
+//                Spacer()
+//            }
+//            ZStack {
+//                Rectangle().frame(height:10)
+//                HStack {
+//                    Color.red   // SwiftUI에선 컬러 그 자체도 하나의 뷰에 해당함
+//                    Rectangle().fill(Color.blue)
+//                    RoundedRectangle(cornerRadius: 0).fill(Color.green)
+//                }
+//            }
+//        }
+//        .padding()
         
+        // 2022.06.16 목
         
+        Circle()
+            .fill(Color.yellow.opacity(0.8))
+            .frame(width: 250, height: 250)
+            // Overlay
+            .overlay(Text("Joystick").font(.largeTitle))
+            .overlay(Image(systemName: "arrow.up").font(.title).padding(), alignment: .top)
+            .overlay(Image(systemName: "arrow.left").font(.title).padding(), alignment: .leading)
+            // Background
+            .background(Image(systemName: "arrow.right").font(.title).padding(), alignment: .trailing)
+            .background(Image(systemName: "arrow.down").font(.title).padding(), alignment: .bottom)
     }
 }
 

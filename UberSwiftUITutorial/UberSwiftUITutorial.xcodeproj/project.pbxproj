@@ -19,6 +19,8 @@
 		BEAEEB9F29C53F9F008AF0A9 /* LocationSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEEB9E29C53F9F008AF0A9 /* LocationSearchResultCell.swift */; };
 		BEAEEBA129C591AA008AF0A9 /* LocationSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEEBA029C591AA008AF0A9 /* LocationSearchViewModel.swift */; };
 		BEAEEBC529CEB0A6008AF0A9 /* MapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEEBC429CEB0A6008AF0A9 /* MapViewState.swift */; };
+		BEAEEBC829CFBCE3008AF0A9 /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEEBC729CFBCE3008AF0A9 /* RideRequestView.swift */; };
+		BEAEEBCA29CFD136008AF0A9 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAEEBC929CFD136008AF0A9 /* RideType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		BEAEEB9E29C53F9F008AF0A9 /* LocationSearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultCell.swift; sourceTree = "<group>"; };
 		BEAEEBA029C591AA008AF0A9 /* LocationSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewModel.swift; sourceTree = "<group>"; };
 		BEAEEBC429CEB0A6008AF0A9 /* MapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewState.swift; sourceTree = "<group>"; };
+		BEAEEBC729CFBCE3008AF0A9 /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
+		BEAEEBC929CFD136008AF0A9 /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		BEAEEB8829C32E53008AF0A9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BEAEEBC629CFBCCF008AF0A9 /* Trips */,
 				BEAEEB9529C4BCA5008AF0A9 /* LocationSearch */,
 				BEAEEB9429C4BC9A008AF0A9 /* Home */,
 			);
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BEAEEBC429CEB0A6008AF0A9 /* MapViewState.swift */,
+				BEAEEBC929CFD136008AF0A9 /* RideType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +183,14 @@
 				BEAEEB9E29C53F9F008AF0A9 /* LocationSearchResultCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BEAEEBC629CFBCCF008AF0A9 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				BEAEEBC729CFBCE3008AF0A9 /* RideRequestView.swift */,
+			);
+			path = Trips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +266,7 @@
 				BEAEEBA129C591AA008AF0A9 /* LocationSearchViewModel.swift in Sources */,
 				BEAEEB9D29C53DDE008AF0A9 /* LocationSearchView.swift in Sources */,
 				BEAEEB9329C3316A008AF0A9 /* LocationManager.swift in Sources */,
+				BEAEEBC829CFBCE3008AF0A9 /* RideRequestView.swift in Sources */,
 				BEAEEBC529CEB0A6008AF0A9 /* MapViewState.swift in Sources */,
 				BEAEEB9B29C4BE10008AF0A9 /* MapViewActionButton.swift in Sources */,
 				BEAEEB7529C32E36008AF0A9 /* UberSwiftUITutorialApp.swift in Sources */,
@@ -259,6 +274,7 @@
 				BEAEEB8F29C32EAD008AF0A9 /* HomeView.swift in Sources */,
 				BEAEEB9929C4BCC6008AF0A9 /* LocationSearchActivationView.swift in Sources */,
 				BEAEEB9F29C53F9F008AF0A9 /* LocationSearchResultCell.swift in Sources */,
+				BEAEEBCA29CFD136008AF0A9 /* RideType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

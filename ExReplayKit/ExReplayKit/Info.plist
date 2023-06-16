@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>992957401878302</string>
+			</array>
+		</dict>
+	</array>
+    <key>FacebookAppID</key>
+    <string>992957401878302</string>
+    <key>FacebookClientToken</key>
+    <string>6b8f92a2030be469d464ac71af5d1ff9</string>
+    <key>FacebookDisplayName</key>
+    <string>ExReplayKit</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram-stories</string>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<false/>
+</dict>
+</plist>

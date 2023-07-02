@@ -12,6 +12,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var date = Date()
+    @State private var bgColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
     
     let dateRange: ClosedRange<Date> = {
         let calendar = Calendar.current

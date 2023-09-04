@@ -51,9 +51,9 @@ struct SettingsView: View {
                     // TODO: - 이런식으로 ForEach 사용하는 방법 알아야함
                     ForEach(SavedLocationViewModel.allCases) { viewModel in
                         NavigationLink {
-                            SavedLocationSearchView()
+                            SavedLocationSearchView(config: viewModel)
                         } label: {
-                            SavedLocationRowView(viewModel: viewModel)
+                            SavedLocationRowView(viewModel: viewModel, user: user)
                         }
                     }
                 }
@@ -89,9 +89,7 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            SettingsView(user: User(fullName: "Joy",
-                                    email: "joy@gmail.com",
-                                    uid: "123456"))
+            SettingsView(user: dev.mockUser)
         }
     }
 }

@@ -8,11 +8,15 @@
 import SwiftUI
 import Firebase
 import FirebaseFirestoreSwift
+import Combine
 
 class AuthViewModel: ObservableObject {
 
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    
+    private let service = UserService.shared
+    private var cancellables = Set<AnyCancellable>()
     
     init() {
         userSession = Auth.auth().currentUser
@@ -33,7 +37,7 @@ class AuthViewModel: ObservableObject {
     
     func registerUser(withEmail email: String, password: String, fullName: String) {
         
-        guard let location = LocationManager.shared.userLocation else { return  }
+        guard let location = LocationManager.shared.userLocation else { return }
         
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
@@ -47,13 +51,15 @@ class AuthViewModel: ObservableObject {
             let user = User(fullName: fullName,
                             email: email,
                             uid: firebaseUser.uid,
-                            coordinates: GeoPoint(latitude: 37.38, longitude: -122.05),
+                            coordinates: GeoPoint(latitude: location.latitude, longitude: location.longitude),
                             accountType: .driver)
             
             self.currentUser = user
             
             guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
             Firestore.firestore().collection("users").document(firebaseUser.uid).setData(encodedUser)
+            
+            self.fetchUser()
         }
     }
     
@@ -68,12 +74,10 @@ class AuthViewModel: ObservableObject {
     }
     
     func fetchUser() {
-        guard let uid = self.userSession?.uid else { return }
-        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
-            guard let snapshot = snapshot else { return }
-            
-            guard let user = try? snapshot.data(as: User.self) else { return }
-            self.currentUser = user
-        }
+        service.$user
+            .sink { user in
+                self.currentUser = user
+            }
+            .store(in: &cancellables)
     }
 }

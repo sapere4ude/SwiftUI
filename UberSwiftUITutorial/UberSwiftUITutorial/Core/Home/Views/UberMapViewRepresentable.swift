@@ -15,6 +15,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     
     @Binding var mapState: MapViewState
     @EnvironmentObject var locationViewModel: LocationSearchViewModel
+    @EnvironmentObject var homeViewModel: HomeViewModel
     
     func makeUIView(context: Context) -> some UIView {
         mapView.delegate = context.coordinator
@@ -30,12 +31,12 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         switch mapState {
         case .noInput:
             context.coordinator.clearMapViewAndRecenterOnUserLocation()
+            context.coordinator.addDriversToMap(homeViewModel.drivers)
             break
         case .searchingForLocation:
             break
         case .locationSelected:
             if let coordinate = locationViewModel.selectedUberLocation?.coordinate {
-                print(#fileID, #function, #line, "칸트")
                 context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
                 context.coordinator.configurePolyline(withDestinationCoordinate: coordinate)
             }
@@ -87,6 +88,16 @@ extension UberMapViewRepresentable {
             return polyline
         }
         
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            if let annotation = annotation as? DriverAnnotation {
+                let view = MKAnnotationView(annotation: annotation, reuseIdentifier: "driver")
+                view.image = UIImage(named: "chevron-sign-to-right")
+                return view
+            }
+            
+            return nil
+        }
+        
         // MARK: - Helpers
         func addAndSelectAnnotation(withCoordinate coordinate: CLLocationCoordinate2D) {
             parent.mapView.removeAnnotations(parent.mapView.annotations) // 기존 마커 제거
@@ -116,6 +127,11 @@ extension UberMapViewRepresentable {
             if let currentRegion = currentRegion {
                 parent.mapView.setRegion(currentRegion, animated: true)
             }
+        }
+        
+        func addDriversToMap(_ drivers: [User]) {
+            let annotations = drivers.map ({ DriverAnnotation(driver: $0) })
+            self.parent.mapView.addAnnotations(annotations)
         }
     }
 }

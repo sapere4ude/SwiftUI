@@ -26,7 +26,7 @@ struct UberSwiftUITutorialApp: App {
     // subview 에서 superview 로부터 주입받은 @EnvironmentObject 프로퍼티를 변경시키면 부모에서도 모두 뷰가 업데이트
     // 전역적으로 데이터를 공유하는 형태이므로, 뷰 간 데이터를 공유할때 사용
     
-    @StateObject var locationViewModel = LocationSearchViewModel()
+    //@StateObject var locationViewModel = LocationSearchViewModel()
     @StateObject var authViewModel = AuthViewModel()
     @StateObject var homeViewModel = HomeViewModel()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
@@ -34,7 +34,7 @@ struct UberSwiftUITutorialApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .environmentObject(locationViewModel)
+//                .environmentObject(locationViewModel)
                 .environmentObject(authViewModel)
                 .environmentObject(homeViewModel)
         }

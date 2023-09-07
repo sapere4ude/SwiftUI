@@ -14,7 +14,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
     let locationManager = LocationManager.shared
     
     @Binding var mapState: MapViewState
-    @EnvironmentObject var locationViewModel: LocationSearchViewModel
+    //@EnvironmentObject var locationViewModel: LocationSearchViewModel
     @EnvironmentObject var homeViewModel: HomeViewModel
     
     func makeUIView(context: Context) -> some UIView {
@@ -36,7 +36,7 @@ struct UberMapViewRepresentable: UIViewRepresentable {
         case .searchingForLocation:
             break
         case .locationSelected:
-            if let coordinate = locationViewModel.selectedUberLocation?.coordinate {
+            if let coordinate = homeViewModel.selectedUberLocation?.coordinate {
                 context.coordinator.addAndSelectAnnotation(withCoordinate: coordinate)
                 context.coordinator.configurePolyline(withDestinationCoordinate: coordinate)
             }
@@ -111,7 +111,7 @@ extension UberMapViewRepresentable {
         
         func configurePolyline(withDestinationCoordinate coordinate: CLLocationCoordinate2D) {
             guard let userLocationCoordinate = self.userLocationCoordinate else { return }
-            parent.locationViewModel.getDestinationRoute(from: userLocationCoordinate, to: coordinate) { route in
+            parent.homeViewModel.getDestinationRoute(from: userLocationCoordinate, to: coordinate) { route in
                 self.parent.mapView.addOverlay(route.polyline)
                 self.parent.mapState = .polylineAdded
                 let rect = self.parent.mapView.mapRectThatFits(route.polyline.boundingMapRect, edgePadding: .init(top: 63, left: 32, bottom: 500, right: 32))

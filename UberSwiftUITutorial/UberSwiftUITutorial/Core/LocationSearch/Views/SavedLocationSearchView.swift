@@ -11,7 +11,7 @@ struct SavedLocationSearchView: View {
     
     @State private var text = ""
     // TODO: - 왜 StateObject를 사용한걸까?
-    @StateObject var viewModel = LocationSearchViewModel()
+    @StateObject var viewModel = HomeViewModel()
     let config: SavedLocationViewModel
     
     var body: some View {

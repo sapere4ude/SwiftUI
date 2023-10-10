@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iPhone15Pink.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -11,7 +11,7 @@ import SwiftUI
 struct ExShoppingBagApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

@@ -62,29 +62,7 @@ struct ShoppingCartView: View {
                     }
                 }
             }
-            VStack {
-//                HStack(alignment: .top) {
-//                    Text("총 주문 갯수")
-//                    Spacer()
-//                    Button(action: {
-//                        // TODO: -
-//                    }) {
-//                        Text("초기화하기")
-//                    }
-//                    Text("\(shoppingBag.calculateTotalQuantity()) 개")
-//                        .frame(alignment: .trailing)
-//                }
-//                .frame(maxWidth: .infinity, maxHeight: 100)
-//                .background(.pink)
-//                VStack {
-//                    Text("가격")
-//                        .background(.orange)
-//                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    Text("주문하기")
-//                        .background(.blue)
-//                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                }
-                
+            VStack(spacing: 0) {
                 VStack {
                     HStack {
                         Text("총 주문 갯수")
@@ -98,15 +76,27 @@ struct ShoppingCartView: View {
                             .frame(alignment: .trailing)
                     }
                     VStack {
-                        Text("가격")
-                            .background(.orange)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        HStack {
+                            Spacer()
+                            Text("￦" + "1,000,000,000,000")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .frame(height: 70)
+                                .padding(.trailing, 10)
+                                .multilineTextAlignment(.trailing)
+                        }
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(.gray)
                 }
                 VStack {
                     Text("ORDER")
+                        .padding(.top, -10)
+                        .frame(height: 70)
+                        .foregroundStyle(.white)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.black)
             }
             .frame(maxWidth: .infinity, maxHeight: 100)
         }

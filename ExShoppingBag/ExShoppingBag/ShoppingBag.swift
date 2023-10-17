@@ -34,6 +34,10 @@ class ShoppingBag: ObservableObject {
             }
         }
     }
+    
+    func resetItems() {
+        items.removeAll()
+    }
 
     func removeItem(at index: Int) {
         items.remove(at: index)
@@ -41,6 +45,10 @@ class ShoppingBag: ObservableObject {
     
     func calculateTotalQuantity() -> Int {
         return items.reduce(0) { $0 + $1.quantity }
+    }
+    
+    func calculateTotalPrice() -> Int {
+        return items.reduce(0) { $0 + ($1.quantity * Int($1.product.price)) }
     }
 }
 

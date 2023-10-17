@@ -26,10 +26,10 @@ struct Product: Identifiable, Equatable {
     
     static func mockData() -> [Product] {
             return [
-                Product(name: "iPhone 15 Pro White", price: 799.99, imageName: "iPhone15ProWhite"),
-                Product(name: "iPhone 15 Pro Natural", price: 999.99, imageName: "iPhone15ProNatural"),
-                Product(name: "iPhone 15 Yellow", price: 1099.99, imageName: "iPhone15Yellow"),
-                Product(name: "iPhone 15 Pink", price: 399.99, imageName: "iPhone15Pink"),
+                Product(name: "iPhone 15 Pro White 256G", price: 1700000, imageName: "iPhone15ProWhite"),
+                Product(name: "iPhone 15 Pro Max Natural 512G", price: 2200000, imageName: "iPhone15ProNatural"),
+                Product(name: "iPhone 15 Yellow 128G", price: 1250000, imageName: "iPhone15Yellow"),
+                Product(name: "iPhone 15 Plus Pink 512G", price: 1800000, imageName: "iPhone15Pink"),
             ]
         }
 }

@@ -20,7 +20,8 @@ struct ProductItemView: View {
                 .frame(height: 150)
             Text(product.name)
                 .font(.headline)
-            Text("$\(String(format: "%.2f", product.price))")
+                .multilineTextAlignment(.center)
+            Text("\(product.price.formatted(.currency(code: "KRW")))")
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             Button(action: {

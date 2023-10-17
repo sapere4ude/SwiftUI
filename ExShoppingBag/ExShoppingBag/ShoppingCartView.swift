@@ -25,7 +25,7 @@ struct ShoppingCartView: View {
                             Text(item.product.name)
                                 .lineLimit(2)
                                 .multilineTextAlignment(.center)
-                            Text("$\(String(format: "%.2f", item.product.price))")
+                            Text("\(item.product.price.formatted(.currency(code: "KRW")))")
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         HStack {
@@ -65,21 +65,30 @@ struct ShoppingCartView: View {
             VStack(spacing: 0) {
                 VStack {
                     HStack {
-                        Text("총 주문 갯수")
-                        Spacer()
                         Button(action: {
-                            // TODO: -
+                            shoppingBag.resetItems()
                         }) {
                             Text("초기화하기")
+                                .foregroundColor(.white)
+                                .padding(.leading, 10)
+                                .padding(.top, 5)
                         }
+                        Spacer()
+                        Text("총 주문 갯수")
+                            .font(.title2)
+                        //Text("\(shoppingBag.calculateTotalQuantity()) 개")
                         Text("\(shoppingBag.calculateTotalQuantity()) 개")
+                            .font(.title2)
                             .frame(alignment: .trailing)
+                            .padding(.trailing, 10)
                     }
+                    .padding(.top, 15)
+                    
                     VStack {
                         HStack {
                             Spacer()
-                            Text("￦" + "1,000,000,000,000")
-                                .font(.largeTitle)
+                            Text("\(shoppingBag.calculateTotalPrice().formatted(.currency(code: "KRW")))")
+                                .font(.title2)
                                 .fontWeight(.bold)
                                 .frame(height: 70)
                                 .padding(.trailing, 10)
@@ -87,11 +96,13 @@ struct ShoppingCartView: View {
                         }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(.gray)
                 }
+                .background(Color(UIColor.systemGray5))
+                
                 VStack {
-                    Text("ORDER")
-                        .padding(.top, -10)
+                    Text("주문하기")
+                        .fontWeight(.bold)
+                        .padding(.top, -30)
                         .frame(height: 70)
                         .foregroundStyle(.white)
                 }

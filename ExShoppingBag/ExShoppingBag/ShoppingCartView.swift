@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct ShoppingCartView: View {
     
     @ObservedObject var shoppingBag: ShoppingBag
+    @State private var showToast = false
 
     var body: some View {
         VStack {
@@ -36,8 +38,8 @@ struct ShoppingCartView: View {
                                 }) {
                                     Image(systemName: "plus.circle.fill")
                                         .resizable()
-                                        .frame(width: 25, height: 25) // 이미지 크기 조정
-                                        .background(.white) // Circle 모양의 배경
+                                        .frame(width: 25, height: 25)
+                                        .background(.white)
                                         .foregroundColor(.green)
                                         .clipShape(Circle())
                                 }
@@ -45,13 +47,12 @@ struct ShoppingCartView: View {
                                 Text("\(item.quantity)")
                                 
                                 Button(action: {
-                                    // TODO: - button action
                                     shoppingBag.removeItem(item.product)
                                 }) {
                                     Image(systemName: "minus.circle.fill")
                                         .resizable()
-                                        .frame(width: 25, height: 25) // 이미지 크기 조정
-                                        .background(.white) // Circle 모양의 배경
+                                        .frame(width: 25, height: 25)
+                                        .background(.white)
                                         .foregroundColor(.red)
                                         .clipShape(Circle())
                                 }
@@ -76,7 +77,6 @@ struct ShoppingCartView: View {
                         Spacer()
                         Text("총 주문 갯수")
                             .font(.title2)
-                        //Text("\(shoppingBag.calculateTotalQuantity()) 개")
                         Text("\(shoppingBag.calculateTotalQuantity()) 개")
                             .font(.title2)
                             .frame(alignment: .trailing)
@@ -110,6 +110,17 @@ struct ShoppingCartView: View {
                 .background(.black)
             }
             .frame(maxWidth: .infinity, maxHeight: 100)
+        }
+        .toast(isPresenting: $shoppingBag.isOverCount4) {
+            AlertToast(type: .systemImage("exclamationmark.triangle", .yellow),
+                       title: "생각하고 담았나요?",
+                       subTitle: "월급을 생각했나요?")
+        }
+        .toast(isPresenting: $shoppingBag.isOverCount6) {
+            AlertToast(type: .systemImage("checkmark.circle", .green),
+                       title: "장바구니 한도를 초과했습니다.",
+                       subTitle: "답이 없네요!")
+            
         }
     }
 }

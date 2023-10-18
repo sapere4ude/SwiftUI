@@ -6,21 +6,45 @@
 //
 
 import Foundation
+import Combine
+
+struct ShoppingCartItem: Identifiable {
+    var id = UUID()
+    var product: Product
+    var quantity: Int
+}
 
 class ShoppingBag: ObservableObject {
     
     @Published var items: [ShoppingCartItem] = []
-
-    // TODO: - 지금은 함수를 호출하는 형태로 작업을 진행했음
-    // 바꿔야 하는건 선언형으로 변경해야함. bind() 메서드안에 퍼블리셔를 넣는 형식으로다가
+    @Published var isOverCount4: Bool = false
+    @Published var isOverCount6: Bool = false
+    
+    private var cancellable: Set<AnyCancellable> = []
+    private var previousTotalQuantity: Int?
+    
+    init() {
+        $items
+            .map { $0.reduce(0) { $0 + $1.quantity } }
+            .sink { [weak self] totalQuantity in
+                if let previousValue = self?.previousTotalQuantity {
+                    if previousValue == 3 && totalQuantity == 4 {
+                        print("Total quantity changed from 3 to 4")
+                        self?.isOverCount4 = true
+                    } else if previousValue == 5 && totalQuantity == 6 {
+                        print("Total quantity changed from 5 to 6")
+                        self?.isOverCount6 = true
+                    }
+                }
+                self?.previousTotalQuantity = totalQuantity
+            }
+            .store(in: &cancellable)
+    }
     
     func addItem(_ product: Product) {
-        // 이미 장바구니에 있는지 확인
         if let index = items.firstIndex(where: { $0.product == product }) {
-            // 이미 있는 경우 수량을 증가
             items[index].quantity += 1
         } else {
-            // 없는 경우 새로 추가
             items.append(ShoppingCartItem(product: product, quantity: 1))
         }
     }
@@ -50,10 +74,4 @@ class ShoppingBag: ObservableObject {
     func calculateTotalPrice() -> Int {
         return items.reduce(0) { $0 + ($1.quantity * Int($1.product.price)) }
     }
-}
-
-struct ShoppingCartItem: Identifiable {
-    var id = UUID()
-    var product: Product
-    var quantity: Int
 }

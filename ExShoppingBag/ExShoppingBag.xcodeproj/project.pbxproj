@@ -15,6 +15,7 @@
 		BE473FFA2AD588C700AA554A /* ShoppingBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE473FF92AD588C700AA554A /* ShoppingBag.swift */; };
 		BE473FFC2AD58F9D00AA554A /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE473FFB2AD58F9D00AA554A /* ProductItemView.swift */; };
 		BE473FFE2AD58FCA00AA554A /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE473FFD2AD58FCA00AA554A /* ShoppingCartView.swift */; };
+		BEE4DC502AE0001800C0A635 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = BEE4DC4F2AE0001800C0A635 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE4DC502AE0001800C0A635 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,9 @@
 			dependencies = (
 			);
 			name = ExShoppingBag;
+			packageProductDependencies = (
+				BEE4DC4F2AE0001800C0A635 /* AlertToast */,
+			);
 			productName = ExShoppingBag;
 			productReference = BE473FE62AD588AB00AA554A /* ExShoppingBag.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +128,9 @@
 				Base,
 			);
 			mainGroup = BE473FDD2AD588AB00AA554A;
+			packageReferences = (
+				BEE4DC4E2AE0001800C0A635 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = BE473FE72AD588AB00AA554A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEE4DC4E2AE0001800C0A635 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEE4DC4F2AE0001800C0A635 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEE4DC4E2AE0001800C0A635 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE473FDE2AD588AB00AA554A /* Project object */;
 }

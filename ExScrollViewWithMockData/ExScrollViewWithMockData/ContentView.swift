@@ -8,22 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-//    var body: some View {
-//        VStack {
-//            Image("kant")
-//                .resizable()
-//                .frame(width: 100, height: 100)
-//                .clipShape(Circle())
-//        }
-//        List {
-//            Section(header: Text("Header")) {
-//                ForEach(0..<5) { index in
-//                    Text("\(index): Text")
-//                    
-//                }
-//            }
-//        }
-//    }
     // MockData에서 생성된 Item 배열을 날짜순으로 정렬
     var sortedItems: [Date: [Item]] {
         Dictionary(grouping: MockData.items) { item in
@@ -42,11 +26,19 @@ struct ContentView: View {
             ForEach(sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
                 Section(header: Text(formatDate(date: date))) {
                     ForEach(items) { item in
-                        Text(item.place)
-                        // 여기에 다른 항목을 표시하거나 수정하세요
+                        HStack {
+                            Text(item.category)
+                            Text(item.place)
+                            Spacer()
+                            Text("\(item.price)")
+                        }
                     }
                 }
             }
+        }
+        
+        VStack {
+            Text("칸트님이 \n현재까지 사용하신 금액은 총 230,000 입니다.")
         }
     }
 

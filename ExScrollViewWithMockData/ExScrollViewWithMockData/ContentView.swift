@@ -16,27 +16,38 @@ struct ContentView: View {
     }
 
     var body: some View {
-        VStack {
-            Image("kant")
-                .resizable()
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
-        }
-        List {
-            ForEach(sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
-                Section(header: Text(formatDate(date: date))) {
-                    ForEach(items) { item in
-                        HStack {
-                            Text(item.category)
-                            Text(item.place)
-                            Spacer()
-                            Text("\(item.price)")
+        NavigationView {
+            VStack {
+                Image("kant")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+                List {
+                    ForEach(sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
+                        Section(header: Text(formatDate(date: date))) {
+                            ForEach(items) { item in
+                                HStack {
+                                    Text(item.category)
+                                    Text(item.place)
+                                    Spacer()
+                                    Text("\(item.price)")
+                                }
+                            }
                         }
                     }
                 }
             }
+            .navigationBarTitle("지출 관리")
+            .toolbar {
+                NavigationLink(
+                    //destination: SpendingView(),
+                    destination: FormView(),
+                    label: {
+                        Text("추가")
+                    })
+            }
         }
-        
+
         VStack {
             Text("칸트님이 \n현재까지 사용하신 금액은 총 230,000 입니다.")
         }

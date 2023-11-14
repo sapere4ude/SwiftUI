@@ -10,10 +10,10 @@ import SwiftUI
 struct CategoryView: View {
     
     @Binding var isPresented: Bool
+    @Binding var selectedCategory: String
     
     let categories = ["☕️ 카페", "🍱 밥집", "🍻 술집", "🛍️ 쇼핑", "🎟️ 관람"]
-    @State private var selectedCategory: String = ""
-
+    
     var body: some View {
         ForEach(categories, id: \.self) { category in
             Button(action: {
@@ -28,6 +28,7 @@ struct CategoryView: View {
                         Image(systemName: "checkmark.circle.fill")
                             .foregroundColor(.green)
                             .padding()
+                        
                     }
                 }
             }

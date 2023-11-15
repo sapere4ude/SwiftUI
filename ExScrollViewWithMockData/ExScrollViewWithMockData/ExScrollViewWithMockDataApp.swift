@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ExScrollViewWithMockDataApp: App {
+    
+    @StateObject private var moneyViewModel = MoneyViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(moneyViewModel: moneyViewModel)
         }
     }
 }

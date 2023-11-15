@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    // MockData에서 생성된 Item 배열을 날짜순으로 정렬
-    var sortedItems: [Date: [Item]] {
-        Dictionary(grouping: MockData.items) { item in
-            Calendar.current.startOfDay(for: item.date)
-        }
-    }
+    @ObservedObject var moneyViewModel: MoneyViewModel
 
     var body: some View {
         NavigationView {
@@ -22,8 +17,10 @@ struct ContentView: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
+                Text("총 지출 금액: \(3000)") // TODO: 전체 금액 합친 값으로 바꾸기
+                    .padding(.top, 5)
                 List {
-                    ForEach(sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
+                    ForEach(moneyViewModel.sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
                         Section(header: Text(formatDate(date: date))) {
                             ForEach(items) { item in
                                 HStack {
@@ -37,6 +34,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .background(Color.gray.opacity(0.1))
             .navigationBarTitle("지출 관리")
             .toolbar {
                 NavigationLink(
@@ -58,6 +56,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}

@@ -9,12 +9,13 @@ import SwiftUI
 
 struct FormView: View {
     
+    @ObservedObject var moneyViewModel: MoneyViewModel
+    
     @State private var isBottomSheetPresented: Bool = false
     @State private var selectedCategory: String = ""
-    
-    
     @State private var expenseName: String = ""
-        @State private var amount: String = ""
+    @State private var place: String = ""
+    @State private var price: String = ""
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,7 +24,7 @@ struct FormView: View {
                 .bold()
                 .padding(.leading, 25)
                 .padding(.bottom, -15)
-            TextField("지출내역을 입력해주세요", text: $amount)
+            TextField("지출내역을 입력해주세요", text: $place)
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 10)
@@ -35,7 +36,7 @@ struct FormView: View {
                 .bold()
                 .padding(.leading, 25)
                 .padding(.bottom, -15)
-            TextField("지출내역을 입력해주세요", text: $amount)
+            TextField("카테고리를 선택해주세요", text: $selectedCategory)
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 10)
@@ -50,7 +51,7 @@ struct FormView: View {
                 .bold()
                 .padding(.leading, 25)
                 .padding(.bottom, -15)
-            TextField("금액을 입력해주세요", text: $amount)
+            TextField("금액을 입력해주세요", text: $price)
                 .keyboardType(.numberPad)
                 .padding()
                 .background(
@@ -62,6 +63,7 @@ struct FormView: View {
             HStack(alignment: .center) {
                 Button(action: {}, label: {
                     Text("뒤로가기")
+                        .fontWeight(.bold)
                 })
                 .frame(width: 170, height: 60)
                 .background(
@@ -71,16 +73,18 @@ struct FormView: View {
                 Spacer()
                 Button(action: {}, label: {
                     Text("만들기")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
                 })
                 .frame(width: 170, height: 60)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.blue.opacity(0.1))
+                        .foregroundColor(Color.blue.opacity(0.9))
                 )
             }
-            //Spacer()
+            .padding(.bottom, 30)
         }
-        .padding(.horizontal, 25)
+        .padding(.horizontal, 15)
         .sheet(isPresented: $isBottomSheetPresented) {
             CategoryView(isPresented: $isBottomSheetPresented, selectedCategory: $selectedCategory)
                 .presentationDetents([.height(300)])
@@ -88,12 +92,13 @@ struct FormView: View {
         .onAppear {
             UIApplication.shared.hideKeyboard()
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 
-#Preview {
-    FormView()
-}
+//#Preview {
+//    FormView()
+//}
 
 extension UIApplication {
     func hideKeyboard() {

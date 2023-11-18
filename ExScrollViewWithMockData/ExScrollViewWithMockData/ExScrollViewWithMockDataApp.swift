@@ -14,7 +14,8 @@ struct ExScrollViewWithMockDataApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(moneyViewModel: moneyViewModel)
+            //ContentView(moneyViewModel: moneyViewModel)
+            FormView(moneyViewModel: moneyViewModel)
         }
     }
 }

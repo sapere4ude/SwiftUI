@@ -19,30 +19,31 @@ struct ContentView: View {
                     .clipShape(Circle())
                 Text("총 지출 금액: \(3000)") // TODO: 전체 금액 합친 값으로 바꾸기
                     .padding(.top, 5)
-                List {
-                    ForEach(moneyViewModel.sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
-                        Section(header: Text(formatDate(date: date))) {
-                            ForEach(items) { item in
-                                HStack {
-                                    Text(item.category)
-                                    Text(item.place)
-                                    Spacer()
-                                    Text("\(item.price)")
-                                }
-                            }
-                        }
-                    }
-                }
+//                List {
+//                    ForEach(moneyViewModel.sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
+//                        Section(header: Text(formatDate(date: date))) {
+//                            ForEach(items) { item in
+//                                HStack {
+//                                    Text(item.category)
+//                                    Text(item.place)
+//                                    Spacer()
+//                                    Text("\(item.price)")
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
             }
             .background(Color.gray.opacity(0.1))
             .navigationBarTitle("지출 관리")
             .toolbar {
                 NavigationLink(
                     //destination: SpendingView(),
-                    destination: FormView(),
+                    destination: FormView(moneyViewModel: moneyViewModel),
                     label: {
                         Text("추가")
                     })
+                
             }
         }
     }

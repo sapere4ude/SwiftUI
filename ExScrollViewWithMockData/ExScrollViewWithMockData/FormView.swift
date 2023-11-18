@@ -18,87 +18,96 @@ struct FormView: View {
     @State private var price: String = ""
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("지출내역")
-                .font(.title3)
-                .bold()
-                .padding(.leading, 25)
-                .padding(.bottom, -15)
-            TextField("지출내역을 입력해주세요", text: $place)
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.blue.opacity(0.1))
-                )
-                .padding()
-            Text("카테고리")
-                .font(.title3)
-                .bold()
-                .padding(.leading, 25)
-                .padding(.bottom, -15)
-            TextField("카테고리를 선택해주세요", text: $selectedCategory)
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.blue.opacity(0.1))
-                )
-                .padding()
-                .onTapGesture {
-                    isBottomSheetPresented.toggle()
+        GeometryReader { geometry in
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Text("지출내역")
+                        .font(.title3)
+                        .bold()
+                        .padding(.leading, 25)
+                        .padding(.bottom, -15)
+                    TextField("지출내역을 입력해주세요", text: $place)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue.opacity(0.1))
+                        )
+                        .padding()
+                    Text("카테고리")
+                        .font(.title3)
+                        .bold()
+                        .padding(.leading, 25)
+                        .padding(.bottom, -15)
+                    TextField("카테고리를 선택해주세요", text: $selectedCategory)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue.opacity(0.1))
+                        )
+                        .padding()
+                        .onTapGesture {
+                            isBottomSheetPresented.toggle()
+                        }
+                    Text("금액")
+                        .font(.title3)
+                        .bold()
+                        .padding(.leading, 25)
+                        .padding(.bottom, -15)
+                    TextField("금액을 입력해주세요", text: $price)
+                        .keyboardType(.numberPad)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue.opacity(0.1))
+                        )
+                        .padding()
                 }
-            Text("금액")
-                .font(.title3)
-                .bold()
-                .padding(.leading, 25)
-                .padding(.bottom, -15)
-            TextField("금액을 입력해주세요", text: $price)
-                .keyboardType(.numberPad)
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.blue.opacity(0.1))
-                )
-                .padding()
-            Spacer()
-            HStack(alignment: .center) {
-                Button(action: {}, label: {
-                    Text("뒤로가기")
-                        .fontWeight(.bold)
-                })
-                .frame(width: 170, height: 60)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.blue.opacity(0.1))
-                )
+                .padding(.horizontal, 15)
+                .sheet(isPresented: $isBottomSheetPresented) {
+                    CategoryView(isPresented: $isBottomSheetPresented, selectedCategory: $selectedCategory)
+                        .presentationDetents([.height(300)])
+                }
+                
                 Spacer()
-                Button(action: {}, label: {
-                    Text("만들기")
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.white)
-                })
-                .frame(width: 170, height: 60)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.blue.opacity(0.9))
-                )
+                
+                VStack {
+                    HStack(alignment: .center) {
+                        Button(action: {}, label: {
+                            Text("뒤로가기")
+                                .fontWeight(.bold)
+                        })
+                        .frame(width: 170, height: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue.opacity(0.1))
+                        )
+                        Spacer()
+                        Button(action: {}, label: {
+                            Text("만들기")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                        })
+                        .frame(width: 170, height: 60)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue.opacity(0.9))
+                        )
+                    }
+                    .padding()
+                }
+                .padding(.bottom)
             }
-            .padding(.bottom, 30)
+            .onAppear {
+                UIApplication.shared.hideKeyboard()
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
         }
-        .padding(.horizontal, 15)
-        .sheet(isPresented: $isBottomSheetPresented) {
-            CategoryView(isPresented: $isBottomSheetPresented, selectedCategory: $selectedCategory)
-                .presentationDetents([.height(300)])
-        }
-        .onAppear {
-            UIApplication.shared.hideKeyboard()
-        }
-        .ignoresSafeArea(.keyboard)
     }
 }
 
-//#Preview {
-//    FormView()
-//}
+#Preview {
+    FormView(moneyViewModel: MoneyViewModel())
+}
 
 extension UIApplication {
     func hideKeyboard() {

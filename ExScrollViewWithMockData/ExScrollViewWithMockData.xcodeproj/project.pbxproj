@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BE36467E2B010DD60089F640 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE36467D2B010DD60089F640 /* CategoryView.swift */; };
 		BE3646802B010E3B0089F640 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE36467F2B010E3B0089F640 /* FormView.swift */; };
+		BE3E22142B11D9C4001C5CE4 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E22132B11D9C4001C5CE4 /* ExpenseViewModel.swift */; };
+		BE3E22162B137407001C5CE4 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E22152B137407001C5CE4 /* Cost.swift */; };
 		BEBDD54F2B0506EB007FD244 /* MoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBDD54E2B0506EB007FD244 /* MoneyViewModel.swift */; };
 		BEBF4F062AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF4F052AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift */; };
 		BEBF4F082AFFC3D600CDAE62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF4F072AFFC3D600CDAE62 /* ContentView.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		BE36467D2B010DD60089F640 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		BE36467F2B010E3B0089F640 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		BE3E22132B11D9C4001C5CE4 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		BE3E22152B137407001C5CE4 /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 		BEBDD54E2B0506EB007FD244 /* MoneyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewModel.swift; sourceTree = "<group>"; };
 		BEBF4F022AFFC3D600CDAE62 /* ExScrollViewWithMockData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExScrollViewWithMockData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBF4F052AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExScrollViewWithMockDataApp.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				BEBF4F152AFFCFF900CDAE62 /* SpendingView.swift */,
 				BE36467D2B010DD60089F640 /* CategoryView.swift */,
 				BEBDD54E2B0506EB007FD244 /* MoneyViewModel.swift */,
+				BE3E22132B11D9C4001C5CE4 /* ExpenseViewModel.swift */,
+				BE3E22152B137407001C5CE4 /* Cost.swift */,
 			);
 			path = ExScrollViewWithMockData;
 			sourceTree = "<group>";
@@ -152,11 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3E22162B137407001C5CE4 /* Cost.swift in Sources */,
 				BE3646802B010E3B0089F640 /* FormView.swift in Sources */,
 				BEBF4F162AFFCFF900CDAE62 /* SpendingView.swift in Sources */,
 				BEBF4F082AFFC3D600CDAE62 /* ContentView.swift in Sources */,
 				BEBF4F142AFFCA1F00CDAE62 /* MockData.swift in Sources */,
 				BEBDD54F2B0506EB007FD244 /* MoneyViewModel.swift in Sources */,
+				BE3E22142B11D9C4001C5CE4 /* ExpenseViewModel.swift in Sources */,
 				BEBF4F062AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift in Sources */,
 				BE36467E2B010DD60089F640 /* CategoryView.swift in Sources */,
 			);

@@ -6,35 +6,33 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    
+    @Query var costs: [Cost]
+    
     @ObservedObject var moneyViewModel: MoneyViewModel
 
     var body: some View {
         NavigationView {
-            VStack {
-                Image("kant")
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .clipShape(Circle())
-                Text("총 지출 금액: \(3000)") // TODO: 전체 금액 합친 값으로 바꾸기
-                    .padding(.top, 5)
-                //                List {
-                //                    ForEach(moneyViewModel.sortedItems.sorted(by: { $0.key > $1.key }), id: \.key) { date, items in
-                //                        Section(header: Text(formatDate(date: date))) {
-                //                            ForEach(items) { item in
-                //                                HStack {
-                //                                    Text(item.category)
-                //                                    Text(item.place)
-                //                                    Spacer()
-                //                                    Text("\(item.price)")
-                //                                }
-                //                            }
-                //                        }
-                //                    }
-                //                }
+            ZStack {
+                List {
+                    ForEach(groupedCosts, id: \.0) { date, costsInDate in
+                        Section(header: Text(formatDate(date: date))) {
+                            ForEach(costsInDate, id: \.id) { cost in
+                                HStack {
+                                    Text(cost.category)
+                                    Text(cost.place)
+                                    Spacer()
+                                    Text("\(cost.price)")
+                                }
+                            }
+                        }
+                    }
+                    .listRowBackground(Color.white)
+                }
             }
-            .background(Color.gray.opacity(0.1))
             .toolbar {
                 NavigationLink(
                     destination: FormView(moneyViewModel: moneyViewModel),
@@ -45,6 +43,21 @@ struct ContentView: View {
                     })
             }
             .navigationBarTitle("", displayMode: .inline) // 넘어갔을때 빈영역 생기지 않게
+        }
+    }
+    
+    var groupedCosts: [(Date, [Cost])] {
+        let groupedDictionary = Dictionary(grouping: costs, by: { date in
+            // You may want to adjust the granularity based on your needs
+            Calendar.current.startOfDay(for: date.date)
+        })
+        
+        // Sort the keys (dates) in descending order
+        let sortedKeys = groupedDictionary.keys.sorted(by: >)
+        
+        // Create a tuple array with sorted dates and corresponding costs
+        return sortedKeys.map { key in
+            (key, groupedDictionary[key]!)
         }
     }
 

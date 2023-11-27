@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ExScrollViewWithMockDataApp: App {
@@ -17,5 +18,6 @@ struct ExScrollViewWithMockDataApp: App {
             ContentView(moneyViewModel: moneyViewModel)
             //FormView(moneyViewModel: moneyViewModel)
         }
+        .modelContainer(for: Cost.self)
     }
 }

@@ -11,6 +11,7 @@
 		BE3646802B010E3B0089F640 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE36467F2B010E3B0089F640 /* FormView.swift */; };
 		BE3E22142B11D9C4001C5CE4 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E22132B11D9C4001C5CE4 /* ExpenseViewModel.swift */; };
 		BE3E22162B137407001C5CE4 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E22152B137407001C5CE4 /* Cost.swift */; };
+		BE3E221A2B14C245001C5CE4 /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E22192B14C245001C5CE4 /* MemberView.swift */; };
 		BEBDD54F2B0506EB007FD244 /* MoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBDD54E2B0506EB007FD244 /* MoneyViewModel.swift */; };
 		BEBF4F062AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF4F052AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift */; };
 		BEBF4F082AFFC3D600CDAE62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF4F072AFFC3D600CDAE62 /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 		BE36467F2B010E3B0089F640 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		BE3E22132B11D9C4001C5CE4 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
 		BE3E22152B137407001C5CE4 /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
+		BE3E22192B14C245001C5CE4 /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		BEBDD54E2B0506EB007FD244 /* MoneyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewModel.swift; sourceTree = "<group>"; };
 		BEBF4F022AFFC3D600CDAE62 /* ExScrollViewWithMockData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExScrollViewWithMockData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBF4F052AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExScrollViewWithMockDataApp.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				BEBDD54E2B0506EB007FD244 /* MoneyViewModel.swift */,
 				BE3E22132B11D9C4001C5CE4 /* ExpenseViewModel.swift */,
 				BE3E22152B137407001C5CE4 /* Cost.swift */,
+				BE3E22192B14C245001C5CE4 /* MemberView.swift */,
 			);
 			path = ExScrollViewWithMockData;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				BEBDD54F2B0506EB007FD244 /* MoneyViewModel.swift in Sources */,
 				BE3E22142B11D9C4001C5CE4 /* ExpenseViewModel.swift in Sources */,
 				BEBF4F062AFFC3D600CDAE62 /* ExScrollViewWithMockDataApp.swift in Sources */,
+				BE3E221A2B14C245001C5CE4 /* MemberView.swift in Sources */,
 				BE36467E2B010DD60089F640 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

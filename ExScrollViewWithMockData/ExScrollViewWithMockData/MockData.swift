@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct Item: Identifiable {
     let id = UUID()
@@ -36,3 +37,26 @@ struct MockData {
         ]
     }
 }
+
+@Model
+class ExpenseItem: Identifiable {
+    var id: String
+    var date: Date
+    var category: String
+    var place: String
+    var price: Double
+    
+    // TODO: date 를 자동으로 만들어 줄 수 있는 코드로 변경하기
+    
+    init(category: String,
+         place: String,
+         price: Double) {
+        self.id = UUID().uuidString
+        self.date = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date()) ?? Date()
+        self.category = category
+        self.place = place
+        self.price = price
+    }
+}
+
+

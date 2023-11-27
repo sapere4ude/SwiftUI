@@ -6,15 +6,30 @@
 //
 
 import SwiftUI
+import Combine
+import SwiftData
 
 struct FormView: View {
+
+    @Environment(\.modelContext) var modelContext
+    
     @Environment(\.presentationMode) var presentationMode
+    
     @ObservedObject var moneyViewModel: MoneyViewModel
     @State private var isBottomSheetPresented: Bool = false
     @State private var selectedCategory: String = ""
     @State private var expenseName: String = ""
     @State private var place: String = ""
     @State private var price: String = ""
+    @State private var isCreateForm = false
+    
+    var isCreateButtonEnabled: Bool {
+        return !selectedCategory.isEmpty && !place.isEmpty && !price.isEmpty
+    }
+    
+    init(moneyViewModel: MoneyViewModel) {
+        self.moneyViewModel = moneyViewModel
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -37,6 +52,7 @@ struct FormView: View {
                 .padding(.bottom, -15)
             TextField("카테고리를 선택해주세요", text: $selectedCategory)
                 .padding()
+                .disabled(true)
                 .background(
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(Color.blue.opacity(0.1))
@@ -75,15 +91,21 @@ struct FormView: View {
                             .foregroundColor(Color.blue.opacity(0.1))
                     )
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {
+                        // TODO: moneyViewModel을 통한 데이터 만들기
+                        modelContext.insert(Cost(category: selectedCategory,
+                                                 place: place,
+                                                 price: 500.0))
+                    }, label: {
                         Text("만들기")
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
                     })
+                    .disabled(!isCreateButtonEnabled)
                     .frame(width: 170, height: 60)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.blue.opacity(0.9))
+                            .foregroundColor(!isCreateButtonEnabled ? Color.gray.opacity(0.5) : Color.blue.opacity(0.9))
                     )
                 }
                 .padding()
@@ -113,9 +135,9 @@ struct FormView: View {
     }
 }
 
-#Preview {
-    FormView(moneyViewModel: MoneyViewModel())
-}
+//#Preview {
+//    FormView(moneyViewModel: MoneyViewModel())
+//}
 
 extension UIApplication {
     func hideKeyboard() {

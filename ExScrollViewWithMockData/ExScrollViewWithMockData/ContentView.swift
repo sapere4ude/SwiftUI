@@ -10,52 +10,79 @@ import SwiftData
 
 struct ContentView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @Query var costs: [Cost]
+    @Environment(\.modelContext) private var modelContext
     
-    @ObservedObject var moneyViewModel: MoneyViewModel
+    var user: String
 
+    init(user: String){
+        self.user = user
+    }
+    
     var body: some View {
-        NavigationView {
-            ZStack {
-                List {
-                    ForEach(groupedCosts, id: \.0) { date, costsInDate in
-                        Section(header: Text(formatDate(date: date))) {
-                            ForEach(costsInDate, id: \.id) { cost in
-                                HStack {
-                                    Text(cost.category)
-                                    Text(cost.place)
-                                    Spacer()
-                                    Text("\(cost.price)")
-                                }
+        ZStack {
+            List {
+                ForEach(groupedCosts, id: \.0) { date, costsInDate in
+                    Section(header: HStack {
+                        Text(formatDate(date: date))
+                        Spacer()
+                        Text(totalCostInDate())
+                    }){
+                        ForEach(costsInDate, id: \.id) { cost in
+                            HStack {
+                                Text(cost.category)
+                                    .foregroundColor(.gray)
+                                Text("|")
+                                    .foregroundColor(.gray)
+                                Text(cost.place)
+                                Spacer()
+                                Text("\(cost.price, specifier: "%.1f") 円")
                             }
                         }
+                        .onDelete { indexSet in
+                            deleteCost(at: indexSet)
+                        }
                     }
-                    .listRowBackground(Color.white)
                 }
+                .listRowBackground(Color.white)
             }
-            .toolbar {
-                NavigationLink(
-                    destination: FormView(moneyViewModel: moneyViewModel),
-                    label: {
-                        Text("추가")
-                            .fontWeight(.medium)
-                            .foregroundColor(.black)
-                    })
-            }
-            .navigationBarTitle("", displayMode: .inline) // 넘어갔을때 빈영역 생기지 않게
         }
+        .navigationBarItems(trailing:
+            HStack {
+                NavigationLink(
+                destination: FormView(user: self.user),
+                label: {
+                    Text("추가")
+                        .fontWeight(.medium)
+                        .foregroundColor(.black)
+                })
+            })
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading:
+                                Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+        }) {
+            Image(systemName: "chevron.left")
+                .imageScale(.large)
+                .fontWeight(.medium)
+                .foregroundColor(.black)
+        }
+        )
     }
     
     var groupedCosts: [(Date, [Cost])] {
-        let groupedDictionary = Dictionary(grouping: costs, by: { date in
-            // You may want to adjust the granularity based on your needs
+        
+        let filteredCosts = costs.filter { cost in
+            return cost.user == self.user
+        }
+        
+        let groupedDictionary = Dictionary(grouping: filteredCosts, by: { date in
             Calendar.current.startOfDay(for: date.date)
         })
         
-        // Sort the keys (dates) in descending order
         let sortedKeys = groupedDictionary.keys.sorted(by: >)
         
-        // Create a tuple array with sorted dates and corresponding costs
         return sortedKeys.map { key in
             (key, groupedDictionary[key]!)
         }
@@ -67,6 +94,21 @@ struct ContentView: View {
         formatter.dateStyle = .long
         formatter.timeStyle = .none
         return formatter.string(from: date)
+    }
+    
+    func totalCostInDate() -> String {
+        var totalCost: Double = 0.0
+        for (_, costsInDate) in groupedCosts {
+            totalCost += costsInDate.reduce(0) { $0 + $1.price }
+        }
+        return "\(round(totalCost * 10) / 10) 円"
+    }
+    
+    private func deleteCost(at indexSet: IndexSet) {
+        for index in indexSet {
+            modelContext.delete(costs[index])
+            totalCostInDate()
+        }
     }
 }
 

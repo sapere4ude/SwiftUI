@@ -12,10 +12,8 @@ import SwiftData
 struct FormView: View {
 
     @Environment(\.modelContext) var modelContext
-    
     @Environment(\.presentationMode) var presentationMode
     
-    @ObservedObject var moneyViewModel: MoneyViewModel
     @State private var isBottomSheetPresented: Bool = false
     @State private var selectedCategory: String = ""
     @State private var expenseName: String = ""
@@ -23,12 +21,14 @@ struct FormView: View {
     @State private var price: String = ""
     @State private var isCreateForm = false
     
+    var user: String
+    
     var isCreateButtonEnabled: Bool {
         return !selectedCategory.isEmpty && !place.isEmpty && !price.isEmpty
     }
     
-    init(moneyViewModel: MoneyViewModel) {
-        self.moneyViewModel = moneyViewModel
+    init(user: String) {
+        self.user = user
     }
     
     var body: some View {
@@ -93,9 +93,11 @@ struct FormView: View {
                     Spacer()
                     Button(action: {
                         // TODO: moneyViewModel을 통한 데이터 만들기
-                        modelContext.insert(Cost(category: selectedCategory,
+                        modelContext.insert(Cost(user: user,
+                                                 category: selectedCategory,
                                                  place: place,
-                                                 price: 500.0))
+                                                 price: (price as NSString).doubleValue))
+                        self.presentationMode.wrappedValue.dismiss()
                     }, label: {
                         Text("만들기")
                             .fontWeight(.bold)

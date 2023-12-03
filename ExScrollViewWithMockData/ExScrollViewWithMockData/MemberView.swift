@@ -6,85 +6,73 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MemberView: View {
     
+    @Query var costs: [Cost]
+    
     var body: some View {
-        VStack(spacing: 15) {
-            HStack{
-                Image("kant")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                Text("칸트 사용내역 작성하기")
-                    .fontWeight(.medium)
-                    .font(.title3)
-                Spacer()
-                Image(systemName: "square.and.pencil")
+        NavigationView {
+            VStack(spacing: 15) {
+                Text("松山 旅行 ⛰️")
                     .font(.title)
-            }
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.blue.opacity(0.1))
-            )
-            .onTapGesture {
-
-            }
-            HStack{
-                Image("kant")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                Text("칸트")
                     .fontWeight(.bold)
-                    .font(.title3)
-                Text("남은 금액")
-                Spacer()
+                MemberDesignView(user: "드웨인")
+                MemberDesignView(user: "보름")
+                MemberDesignView(user: "칸트")
+                MemberDesignView(user: "타피")
             }
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.blue.opacity(0.1))
-            )
-            HStack{
-                Image("kant")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                Text("칸트")
-                    .fontWeight(.bold)
-                    .font(.title3)
-                Text("남은 금액")
-                Spacer()
-            }
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.blue.opacity(0.1))
-            )
-            HStack{
-                Image("kant")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                Text("칸트")
-                    .fontWeight(.bold)
-                    .font(.title3)
-                Text("남은 금액")
-                Spacer()
-            }
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.blue.opacity(0.1))
-            )
+            .padding(.leading, 10)
+            .padding(.trailing, 10)
         }
-        .padding(.leading, 10)
-        .padding(.trailing, 10)
+        .navigationBarTitle("", displayMode: .inline) // 넘어갔을때 빈영역 생기지 않게
     }
 }
 
-#Preview {
-    MemberView()
+struct MemberDesignView: View {
+    
+    @Query var costs: [Cost]
+    var user: String
+    
+    init(user: String) {
+        self.user = user
+    }
+    var body: some View {
+        HStack{
+            Image("\(user)")
+                .resizable()
+                .frame(width: 60, height: 60)
+                .clipShape(Circle())
+            VStack(alignment: .leading) {
+                Text("\(user)")
+                    .fontWeight(.bold)
+                    .font(.title3)
+                Text("총 사용 금액 " + showCost("\(user)"))
+            }
+            Spacer()
+            NavigationLink(
+                destination: ContentView(user: "\(user)"),
+                label: {
+                    Image(systemName: "square.and.pencil")
+                        .font(.title)
+                })
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .foregroundColor(Color.blue.opacity(0.1))
+        )
+    }
+    
+    func showCost(_ user: String) -> String {
+        let kantCosts = costs.filter { $0.user == user }
+        let total = kantCosts.reduce(0) { $0 + $1.price }
+        let cost = round(total * 10) / 10
+        return " \(cost) 円"
+    }
 }
+
+//#Preview {
+//    MemberView()
+//}

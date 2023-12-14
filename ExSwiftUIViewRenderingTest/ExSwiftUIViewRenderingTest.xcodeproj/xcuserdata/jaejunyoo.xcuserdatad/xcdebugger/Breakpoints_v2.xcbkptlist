@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DB57645C-936F-4D0F-8641-2AD4793632D1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "draw"
+            moduleName = "">
+            <Locations>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 917dee157f3fd336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(rbDisplayList: Swift.AnyObject) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 4a3f833cb318d122"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Text, at: __C.CGPoint, anchor: SwiftUI.UnitPoint) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1741b8dbcf51372c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Image, at: __C.CGPoint, anchor: SwiftUI.UnitPoint) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 44a85e38b848fc3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.GraphicsContext.ResolvedText, at: __C.CGPoint, anchor: SwiftUI.UnitPoint) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 38e1d56c0af04aee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.GraphicsContext.ResolvedImage, at: __C.CGPoint, anchor: SwiftUI.UnitPoint) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - c6f6ab90f814ef23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.GraphicsContext.ResolvedSymbol, at: __C.CGPoint, anchor: SwiftUI.UnitPoint) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 3f01dd31a5450545"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Image, in: __C.CGRect, style: SwiftUI.FillStyle) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 44bb64bb1df49183"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.GraphicsContext.ResolvedImage, in: __C.CGRect, style: SwiftUI.FillStyle) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 59b0b668b95029b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Text, in: __C.CGRect) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 2095bcbe0e38fa44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.GraphicsContext.ResolvedText, in: __C.CGRect) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - afce50975808cb7b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.GraphicsContext.ResolvedSymbol, in: __C.CGRect) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - dd6e73f9497d3336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Text.Layout.Run, options: SwiftUI.Text.Layout.DrawingOptions) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 238220db51f1a331"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Text.Layout.Line, options: SwiftUI.Text.Layout.DrawingOptions) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - e5075d39d4fe4c7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI.GraphicsContext.draw(_: SwiftUI.Text.Layout.RunSlice, options: SwiftUI.Text.Layout.DrawingOptions) -&gt; ()"
+                  moduleName = "SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - e9db9d8beddbed29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::CrossFadeStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - c1146857c027ac80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::FilterStyle&lt;RB::Filter::GaussianBlur&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 8bd5435c060d80a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::Symbol::Glyph::Layer::draw(_RBDrawingState*, RBColor, float, RBBlendMode, RB::AffineTransform const&amp;, RB::Symbol::Presentation const&amp;, bool) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 2aebdd1eafa81e89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::GeometryMatrixStyle&lt;RB::GeometryStyle::Rotation&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 35138834e590ec81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::GeometryMatrixStyle&lt;RB::GeometryStyle::Scale&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - e1f877022be238fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::GeometryMatrixStyle&lt;RB::GeometryStyle::Translation&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 27b00669e7f7f956"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::GeometryMatrixStyle&lt;RB::GeometryStyle::Rotation3D&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - be0b6b57cbc10c86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::GeometryMatrixStyle&lt;RB::GeometryStyle::Affine&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 34002bb8cfe9af8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::FilterStyle&lt;RB::Filter::ColorMatrix&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - a8626fa2a7d2c0b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::ColorMultiply&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - a8626fa2a7d2c0b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::AlphaMultiply&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - f47786d0ecd67982"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::HueRotation&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 75dd39bc2fe2c2d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::Saturation&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 75dd39bc2fe2c2d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::Brightness&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - a6098af4ce0120ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::Contrast&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - f3e9e986433af6f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::LuminanceToAlpha&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - f47786d0ecd67982"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::ColorInvert&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - dae2a9cd54ba06ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ColorFilterStyle&lt;RB::ColorStyle::ColorMonochrome&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 557618f0eb4b4685"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::FilterStyle&lt;RB::Filter::LuminanceCurve&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - ac3d29c2bfef0f85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::FilterStyle&lt;RB::Filter::RGBACurves&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1fdc3adeb40ded62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::FilterStyle&lt;RB::Filter::Custom&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - c7a1e9369ff02d2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::Symbol::Presentation::draw(_RBDrawingState*, RBColor (RBSymbolStyle, NSString*) block_pointer) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - b599dab49c2e569"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::draw(RB::DisplayList::Item*, RB::DisplayList::State&amp;)"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 398f8dbe84e8a8eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::draw(RB::DisplayList::Contents const&amp;, RB::DisplayList::State&amp;, float, RB::DisplayListPredicate::Invertible const*, void*)"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 59b64956079400cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::draw(RB::DisplayList::Item*, RB::DisplayList::Layer&amp;, unsigned int)"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 662a94bd081fc5fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::ShadowStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 9a7ba4cf2855994e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::PathProjectionStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 41c3170777617a05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::AlphaThresholdStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 58d77756b5646f50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::AlphaGradientStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 80642ba56f60f79f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::CustomEffectStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - d1bfe4be9ebe7740"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::PredicateStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 4e07a3698bc0be6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::TransformStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 484717a605f60073"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::AnimationStyle::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - e7d8e4482fcd9a02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::DisplayList::GeometryMatrixStyle&lt;RB::GeometryStyle::Projection&gt;::draw(RB::DisplayList&amp;, RB::DisplayList::Layer&amp;, RB::DisplayList::Item*, unsigned int) const"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 523b9ea542d264d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RB::RenderPass::draw(RB::RenderState, RB::Bounds const&amp;, unsigned long)"
+                  moduleName = "RenderBox"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1d68edd508bfd332"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::OGL::MetalContext::draw(MTLPrimitiveType, unsigned int, unsigned int, void const*, unsigned long, unsigned long, unsigned int, unsigned int, unsigned short const*, CA::OGL::ClipPlane const*, CA::OGL::MetalBufferPool::MetalBuffer const*)"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - c268698c1c58415d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipPath::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 232714ea0c1e3484"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipImage::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - a0d4983f356e8fc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipRectFill::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 51be5873184495dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipRectStroke::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 10edfe7a7bfe5b0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipEllipseFill::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 787892ae7ef4e6b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipRoundedRectFill::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - f8d36dd3abc2636d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ClipOp::draw(CA::CG::Renderer&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 252b92ac03dd67a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::OGL::(anonymous namespace)::MaskWithRect::draw(CA::OGL::Context&amp;, CA::OGL::RectState const&amp;) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - e5e9be5573362200"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::OGL::Mosaic::draw(CA::OGL::Context&amp;, unsigned int, unsigned int, CA::OGL::Mosaic::Key const*, int, int, bool, CA::OGL::Mosaic::Delegate const&amp;, unsigned int, CA::Mat2&lt;double&gt; const*)"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 41a767af4f0e7f5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::(anonymous namespace)::ShadingBitmapDelegate::draw(CGContext*) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 955b907c3277256e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CA::CG::ImageDelegate::draw(CGContext*) const"
+                  moduleName = "QuartzCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 3964d4a4012d5acf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SVGPattern::draw(CGContext*) const"
+                  moduleName = "CoreSVG"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 5fd698aee7f7870c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SVGImage::draw(CGContext*) const"
+                  moduleName = "CoreSVG"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 29f3eeafcf2a92f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SVGFilterPrimitive::draw(FilterContext&amp;, FilterResult**, std::__1::unordered_map&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt;, FilterResult*, std::__1::hash&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt;&gt;, std::__1::equal_to&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt;&gt;, std::__1::allocator&lt;std::__1::pair&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt;&gt; const, FilterResult*&gt;&gt;&gt;&amp;, CGSize, CGSize)"
+                  moduleName = "CoreSVG"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 336ec6510f1ab1f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SVGViewBoxNode::draw(CGContext*) const"
+                  moduleName = "CoreSVG"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - dbf47ab1c6e96918"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SVGFilter::draw(CGContext*, SVGNode const*, CGRect, CGRect)"
+                  moduleName = "CoreSVG"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - c287bb8dbcd67126"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[_UILabelMetrics draw]"
+                  moduleName = "UIKitCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 903acdd30da5ef97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.CGContextRef.draw(_: __C.CGLayerRef, at: __C.CGPoint) -&gt; ()"
+                  moduleName = "libswiftCoreGraphics.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 225ab6ee1944fb67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.CGContextRef.draw(_: __C.CGImageRef, in: __C.CGRect, byTiling: Swift.Bool) -&gt; ()"
+                  moduleName = "libswiftCoreGraphics.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 619111a8bf681308"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.CGContextRef.draw(_: __C.CGLayerRef, in: __C.CGRect) -&gt; ()"
+                  moduleName = "libswiftCoreGraphics.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 6e530300089d2e1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::ApplePayButtonCocoa::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRoundedRect const&amp;, float, WebCore::ControlStyle const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1d6b341597ef62a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::WebGPU::RenderBundleEncoderImpl::draw(unsigned int, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - e07a199d2def94d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::WebGPU::RenderPassEncoderImpl::draw(unsigned int, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 2ba205cd509091c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::CustomPaintImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 164b1080dff3b828"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::InspectorOverlayLabel::draw(WebCore::GraphicsContext&amp;, float)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 6f23e4ba0225709d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::BitmapImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 46b733c47de0deed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::CrossfadeGeneratedImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - b9144224f931c9fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::GradientImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - fe36330d84fc9da3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::NamedImageGeneratedImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - dff1d99c3d6fc090"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::NativeImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatSize const&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1c152190c21548a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::PDFDocumentImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 6d9c740f7e07bed2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::ControlPart::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRoundedRect const&amp;, float, WebCore::ControlStyle const&amp;) const"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 3e7831fbbd8c0028"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::RenderSVGResourceMarker::draw(WebCore::PaintInfo&amp;, WebCore::AffineTransform const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 6d064bc5c8e3cb0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::SVGImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1142a3868844e678"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::SVGImageForContainer::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 9e3c4a11b234c986"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::SVGResourceImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 32a767694795d99e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::ImageBuffer::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;, WebCore::FloatRect const&amp;, WebCore::ImagePaintingOptions const&amp;)"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - ab6b44345e4f4f1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::ARKitBadgeSystemImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;) const"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 4c7158ec9a871c8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebCore::ApplePayLogoSystemImage::draw(WebCore::GraphicsContext&amp;, WebCore::FloatRect const&amp;) const"
+                  moduleName = "WebCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 8f5c1794f8059dab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rx::mtl::RenderCommandEncoder::draw(MTLPrimitiveType, unsigned int, unsigned int)"
+                  moduleName = "libANGLE-shared.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 8187559b4354add8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebGPU::RenderBundleEncoder::draw(unsigned int, unsigned int, unsigned int, unsigned int)"
+                  moduleName = "WebGPU"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 9865bbd4e027fbb5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GLKSkyboxEffect draw]"
+                  moduleName = "GLKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 1be3390d30aa869"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MTKViewDisplayLinkTarget draw]"
+                  moduleName = "MetalKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 3548d8797eabd16a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MTKView draw]"
+                  moduleName = "MetalKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 8ed47a20d7ca30b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggl::Performance::Counters::draw(ggl::DebugConsole&amp;)"
+                  moduleName = "VectorKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 906c0dacd7698374"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebKit::WebGPU::RemoteRenderBundleEncoderProxy::draw(unsigned int, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;)"
+                  moduleName = "WebKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "37ACFA29-B7D3-4108-AED5-6CE30D545535 - 7f242fd7f1bb96bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebKit::WebGPU::RemoteRenderPassEncoderProxy::draw(unsigned int, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;, std::__1::optional&lt;unsigned int&gt;)"
+                  moduleName = "WebKit"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

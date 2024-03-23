@@ -12,7 +12,7 @@ struct CategoryView: View {
     @Binding var isPresented: Bool
     @Binding var selectedCategory: String
     
-    let categories = ["☕️ 카페", "🍱 밥집", "🍻 술집", "🛍️ 쇼핑", "🎟️ 관람"]
+    let categories = ["☕️ 카페", "🍱 밥집", "🍻 술집", "🛍️ 쇼핑", "🎟️ 관람", "📝 기타"]
     
     var body: some View {
         ForEach(categories, id: \.self) { category in
@@ -26,7 +26,7 @@ struct CategoryView: View {
                     Spacer()
                     if selectedCategory == category {
                         Image(systemName: "checkmark.circle.fill")
-                            .foregroundColor(.green)
+                            .foregroundColor(.blue)
                             .padding()
                         
                     }

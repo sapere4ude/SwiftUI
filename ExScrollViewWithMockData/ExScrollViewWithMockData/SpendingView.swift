@@ -21,7 +21,7 @@ struct SpendingView: View {
                     // Your additional actions when the button is tapped
                 }) {
                     Image(systemName: isChecked ? "checkmark.circle.fill" : "checkmark.circle")
-                        .foregroundColor(isChecked ? .green : .primary)
+                        .foregroundColor(isChecked ? .blue : .primary)
                         .imageScale(.large)
                 }
             }
@@ -33,7 +33,7 @@ struct SpendingView: View {
                     // Your additional actions when the button is tapped
                 }) {
                     Image(systemName: isChecked ? "checkmark.circle.fill" : "checkmark.circle")
-                        .foregroundColor(isChecked ? .green : .primary)
+                        .foregroundColor(isChecked ? .blue : .primary)
                         .imageScale(.large)
                 }
             }
@@ -45,7 +45,7 @@ struct SpendingView: View {
                     // Your additional actions when the button is tapped
                 }) {
                     Image(systemName: isChecked ? "checkmark.circle.fill" : "checkmark.circle")
-                        .foregroundColor(isChecked ? .green : .primary)
+                        .foregroundColor(isChecked ? .blue : .primary)
                         .imageScale(.large)
                 }
             }

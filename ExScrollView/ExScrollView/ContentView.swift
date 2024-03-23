@@ -17,7 +17,7 @@ struct ContentView: View {
                 ForEach(MockData.items) { item in
                     Circle()
                         .containerRelativeFrame(.horizontal,
-                                                count: verticalSizeClass == .regular ? 1: 4,
+                                                count: verticalSizeClass == .regular ? 3: 4,
                                                 spacing: 16)
                         .foregroundStyle(item.color.gradient)
                         .scrollTransition { content, phase in

@@ -121,7 +121,7 @@ struct FormView: View {
         .ignoresSafeArea(.keyboard)
         .sheet(isPresented: $isBottomSheetPresented) {
             CategoryView(isPresented: $isBottomSheetPresented, selectedCategory: $selectedCategory)
-                .presentationDetents([.height(300)])
+                .presentationDetents([.height(355)])
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading:

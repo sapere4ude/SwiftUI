@@ -13,6 +13,9 @@
 		BE87F5CF2BDCE25500346373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE87F5CE2BDCE25500346373 /* Preview Assets.xcassets */; };
 		BE87F5D82BDCE2FA00346373 /* LongPressGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87F5D72BDCE2FA00346373 /* LongPressGestureBootcamp.swift */; };
 		BE87F5DA2BDDDEDF00346373 /* MagnificationBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE87F5D92BDDDEDF00346373 /* MagnificationBootcamp.swift */; };
+		BEF660AF2BE8B15C004600BA /* RotationGestureBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF660AE2BE8B15C004600BA /* RotationGestureBootcamp.swift */; };
+		BEF660B12BE8B2A6004600BA /* DragGesutreBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF660B02BE8B2A6004600BA /* DragGesutreBootcamp.swift */; };
+		BEF660B32BE8BD6D004600BA /* DragGestureBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF660B22BE8BD6D004600BA /* DragGestureBootcamp2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		BE87F5CE2BDCE25500346373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE87F5D72BDCE2FA00346373 /* LongPressGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureBootcamp.swift; sourceTree = "<group>"; };
 		BE87F5D92BDDDEDF00346373 /* MagnificationBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationBootcamp.swift; sourceTree = "<group>"; };
+		BEF660AE2BE8B15C004600BA /* RotationGestureBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureBootcamp.swift; sourceTree = "<group>"; };
+		BEF660B02BE8B2A6004600BA /* DragGesutreBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesutreBootcamp.swift; sourceTree = "<group>"; };
+		BEF660B22BE8BD6D004600BA /* DragGestureBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureBootcamp2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +63,13 @@
 			children = (
 				BE87F5C72BDCE25200346373 /* SwiftfulThinkingApp.swift */,
 				BE87F5C92BDCE25200346373 /* ContentView.swift */,
+				BE87F5D92BDDDEDF00346373 /* MagnificationBootcamp.swift */,
 				BE87F5D72BDCE2FA00346373 /* LongPressGestureBootcamp.swift */,
+				BEF660AE2BE8B15C004600BA /* RotationGestureBootcamp.swift */,
+				BEF660B02BE8B2A6004600BA /* DragGesutreBootcamp.swift */,
 				BE87F5CB2BDCE25500346373 /* Assets.xcassets */,
 				BE87F5CD2BDCE25500346373 /* Preview Content */,
-				BE87F5D92BDDDEDF00346373 /* MagnificationBootcamp.swift */,
+				BEF660B22BE8BD6D004600BA /* DragGestureBootcamp2.swift */,
 			);
 			path = SwiftfulThinking;
 			sourceTree = "<group>";
@@ -143,10 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF660B32BE8BD6D004600BA /* DragGestureBootcamp2.swift in Sources */,
+				BEF660B12BE8B2A6004600BA /* DragGesutreBootcamp.swift in Sources */,
 				BE87F5DA2BDDDEDF00346373 /* MagnificationBootcamp.swift in Sources */,
 				BE87F5CA2BDCE25200346373 /* ContentView.swift in Sources */,
 				BE87F5C82BDCE25200346373 /* SwiftfulThinkingApp.swift in Sources */,
 				BE87F5D82BDCE2FA00346373 /* LongPressGestureBootcamp.swift in Sources */,
+				BEF660AF2BE8B15C004600BA /* RotationGestureBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

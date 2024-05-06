@@ -12,7 +12,10 @@ struct SwiftfulThinkingApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            MagnificationBootCamp()
+            //MagnificationBootCamp()
+            //RotationGestureBootcamp()
+            //DragGesutreBootcamp()
+            DragGestureBootcamp2()
         }
     }
 }
